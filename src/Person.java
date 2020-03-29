@@ -1,4 +1,5 @@
 public class Person {
-    private String name = "Jackie";
+    private String name;
+
 //    public String getName(name);
 }

@@ -32,7 +32,7 @@ public class MethodsExercises {
         return a % b;
     }
 
-    public static int getInteger(int min)
+//    public static int getInteger(int min)
 
 
 }

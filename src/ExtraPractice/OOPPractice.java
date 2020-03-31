@@ -184,20 +184,20 @@ public class OOPPractice {
     //
 
 
-    public class Dog {
-        String breed:
-        int age:
-        String color:
-
-        void bark(){
-            int x:
-
-        }
-
-        void run(){
-            String s:
-
-        }
+//    public class Dog {
+//        String breed:
+//        int age:
+//        String color:
+//
+//        void bark(){
+//            int x:
+//
+//        }
+//
+//        void run(){
+//            String s:
+//
+//        }
 
         //..More methods
     }
@@ -206,7 +206,7 @@ public class OOPPractice {
 
 
 
-}
+//}
 
 
 

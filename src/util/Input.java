@@ -1,7 +1,7 @@
 package util;
 
-import org.w3c.dom.ls.LSOutput;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 //TODO: Inside of util, create a class named Input that has a private property named scanner.
 
@@ -42,8 +42,17 @@ public class Input {
 //    }
 
     public int getInt(){
-        System.out.println("Enter a number, any number: ");
-        return Integer.parseInt(getString());
+        System.out.println("Please enter a number.");
+            String x = scanner.nextLine();
+            int userNum;
+        try{
+//            System.out.println(x);
+            userNum = Integer.parseInt(x);
+        }catch(Exception e){
+                System.out.println("Sorry that is not a number, try again.");
+                return getInt();
+        }
+        return userNum;
     }
 
 //    public double getDouble(double min, double max){
@@ -61,6 +70,17 @@ public class Input {
 
     public double getDouble(){
         System.out.println("Enter a number with a decimal: ");
-        return Double.parseDouble(getString());
+        String y = scanner.nextLine();
+        double userDbl;
+        try{
+//            System.out.println(y);
+            userDbl = Double.parseDouble(y);
+        }catch (Exception e){
+            System.out.println("Sorry, that is not a double, try again.");
+            return getDouble();
+        }
+        return userDbl;
     }
+
+
 }
